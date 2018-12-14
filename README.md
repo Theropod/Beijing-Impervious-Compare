@@ -17,3 +17,5 @@
 - ## 2017年from-glc
     
     from-glc官网上下载的2017v1，在110E50N这一景的最下面（也就是40N纬线）上有一个条带的缺失，值为0，不知道为什么。这个缺失我是用from-glc 2013给补上
+- ## 栅格处理
+    因为原始数据不一样，裁剪重分类步骤不一样，最后要统一一下。本地先在qgis里Raster->Conversion->Translate里面把data type改成Byte (8 digit unsigned int) 本来这样大约(8728*8828*8)/8=77050784 byte 70多M一景，但是在Arcgis里面不管是不是已经30m再重采样一遍，就可以缩小到1-2M
